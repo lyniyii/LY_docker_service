@@ -1,4 +1,4 @@
-# LY_docker_service
+# Rappel
 
 Minikube est une version de Docker
 
@@ -22,3 +22,12 @@ Il y a quatre types de service :
 - défaut (Node Port)
 - external name (pour avoir un nom de domaine)
 - cluster IP (adresse interne au cluster)
+
+# Cluster IP
+
+Comment connaître l'adresse d'un service ? 
+Dans tous les services il y a un Domain Name Service
+
+[schéma]
+app front < image front < pod front -> app back < image back < pod back
+service front					service back
